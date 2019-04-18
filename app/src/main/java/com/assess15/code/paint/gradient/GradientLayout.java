@@ -34,7 +34,7 @@ public class GradientLayout extends View {
         initPaint();
 
         // bitmap
-        mBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.girl);
+        mBitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.girl);
 
         /**
          * 线性渲染器

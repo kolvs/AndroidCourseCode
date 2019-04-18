@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:layout_width="match_parent"
+              android:gravity="center"
               android:layout_height="match_parent">
+
+    <com.assess15.code.pathMeasure.demo.AliPayView
+            android:id="@+id/apv"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            app:progress_radius="40dp"
+            app:progress_width="3dp"
+            android:padding="10dp"
+            app:progress_color="@color/yellow"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:id="@+id/btnSuccess"
+                android:text="成功"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/btnFail"
+                android:text="失败"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
 
 </LinearLayout>

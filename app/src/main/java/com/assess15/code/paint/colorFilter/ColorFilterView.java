@@ -27,7 +27,7 @@ public class ColorFilterView extends View {
 
     private void init() {
         paint = new Paint();
-        bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.girl);
+        bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.girl);
 
         /**
          * LightingColorFilter滤镜
