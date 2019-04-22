@@ -28,6 +28,7 @@
         <activity android:name=".canvas.CanvasActivity"/>
         <activity android:name=".path.PathActivity"/>
         <activity android:name=".pathMeasure.PathMeasureActivity"/>
+        <activity android:name=".event.EventActivity"/>
     </application>
 
 </manifest>

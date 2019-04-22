@@ -1,14 +1,13 @@
-package com.assess15.code.canvas;
+package com.assess15.code.event;
 
 import android.content.Context;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.ViewGroup;
 
 public class MyViewGroup extends ViewGroup {
-
-
 
     public MyViewGroup(Context context) {
         this(context,null);
@@ -46,4 +45,20 @@ public class MyViewGroup extends ViewGroup {
 
         Log.d("tag","dispatchDraw走了");
     }
+
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return super.dispatchTouchEvent(ev);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    public boolean onInterceptTouchEvent(MotionEvent ev) {
+        return super.onInterceptTouchEvent(ev);
+    }
+
 }

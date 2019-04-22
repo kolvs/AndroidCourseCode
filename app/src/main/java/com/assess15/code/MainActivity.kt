@@ -4,6 +4,7 @@ import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.assess15.code.canvas.CanvasActivity
+import com.assess15.code.event.EventActivity
 import com.assess15.code.paint.PaintActivity
 import com.assess15.code.paint.xfermode.XfermodeActivity
 import com.assess15.code.path.PathActivity
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         pathMeasure.setOnClickListener {
             startActivity(Intent(this, PathMeasureActivity::class.java))
+        }
+
+        event.setOnClickListener {
+            startActivity(Intent(this, EventActivity::class.java))
         }
     }
 }

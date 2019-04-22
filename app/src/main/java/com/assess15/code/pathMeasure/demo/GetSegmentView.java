@@ -43,7 +43,7 @@ public class GetSegmentView extends View {
         paint.setStyle(Paint.Style.STROKE);
         paint.setStrokeWidth(4);
 
-        dstPath = new Path();
+        dstPath = new Path();// 创建用于存储截取后内容的 Path
         circlePath = new Path();
         circlePath.addCircle(100, 100, 50, Path.Direction.CW);
 

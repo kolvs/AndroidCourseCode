@@ -66,7 +66,7 @@ public class AliPayView extends View {
         progressColor = typedArray.getColor(R.styleable.AliPayView_progress_color, Color.GRAY);
         loadingFailColor = typedArray.getColor(R.styleable.AliPayView_loading_fail_color, Color.RED);
         loadingSuccessColor = typedArray.getColor(R.styleable.AliPayView_loading_success_color, Color.GREEN);
-        typedArray.recycle();
+        typedArray.recycle();//  为什么要回收？
 
         initPaint();
         initPath();
