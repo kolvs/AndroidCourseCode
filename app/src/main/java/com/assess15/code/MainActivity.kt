@@ -11,6 +11,7 @@ import com.assess15.code.materialDesign.MaterialDesignActivity
 import com.assess15.code.paint.PaintActivity
 import com.assess15.code.path.PathActivity
 import com.assess15.code.pathMeasure.PathMeasureActivity
+import com.assess15.code.recyclerView.RecyclerViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -52,6 +53,10 @@ class MainActivity : AppCompatActivity() {
 
         materialDesign.setOnClickListener {
             startActivity(Intent(this, MaterialDesignActivity::class.java))
+        }
+
+        recyclerView.setOnClickListener {
+            startActivity(Intent(this,RecyclerViewActivity::class.java))
         }
     }
 }

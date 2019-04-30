@@ -40,6 +40,7 @@
         <activity android:name=".materialDesign.ToolbarActivity"/>
         <activity android:name=".materialDesign.MovieDetailActivity"/>
         <activity android:name=".materialDesign.FloatTabActivity"/>
+        <activity android:name=".recyclerView.RecyclerViewActivity"/>
 
     </application>
 
