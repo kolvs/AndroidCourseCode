@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
-import android.widget.Toast
 import com.assess15.code.R
 import kotlinx.android.synthetic.main.activity_event.*
 
@@ -17,9 +16,10 @@ class EventActivity : AppCompatActivity() {
 
         /**
          * OnTouchListener处于点击事件最顶端，权重最高
+         * @return false true
          */
         btn.setOnTouchListener(object : View.OnTouchListener {
-            private val result = true
+            private val result = false
 
             override fun onTouch(v: View?, event: MotionEvent?): Boolean {
                 if (result) {
@@ -36,33 +36,35 @@ class EventActivity : AppCompatActivity() {
          */
         btn.setOnClickListener {
             Log.d("tr", "OnClickListener")
-            Toast.makeText(this, "拿不到点击事件", Toast.LENGTH_SHORT).show()
         }
     }
 
     /**
-     * Activity中分发事件
-     * @return false  true
+     * Activity中分发事件，是事件分发的开始
+     * @return 默认调用父类dispatchTouchEvent方法
      */
     override fun dispatchTouchEvent(ev: MotionEvent?): Boolean {
-        val result = true
-        if (result) {
-            Toast.makeText(this,"dispatchTouchEvent，返回true",Toast.LENGTH_SHORT).show()
-            Log.d("tr", "dispatchTouchEvent，返回true")
+        val event = super.dispatchTouchEvent(ev)
+        if (event) {
+            Log.d("tr", "dispatchTouchEvent，返回----$event")
         } else {
-            Toast.makeText(this,"dispatchTouchEvent，返回false",Toast.LENGTH_SHORT).show()
-            Log.d("tr", "dispatchTouchEvent，返回false")
+            Log.d("tr", "dispatchTouchEvent，返回----$event")
         }
-        return result
+        return event
     }
 
     /**
      * Activity中的点击事件
      */
     override fun onTouchEvent(event: MotionEvent?): Boolean {
-        Toast.makeText(this, "拿到Activity中，onTouchEvent点击事件", Toast.LENGTH_SHORT).show()
-        Log.d("tr", "onTouchEvent，返回true")
-        return true
+//        val b = super.onTouchEvent(event)
+        val b = false
+        if (b) {
+            Log.d("tr", "onTouchEvent，返回0000000$b")
+        } else {
+            Log.d("tr", "onTouchEvent，返回1111111$b")
+        }
+        return b
     }
 
 }

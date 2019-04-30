@@ -4,6 +4,8 @@
         xmlns:tools="http://schemas.android.com/tools"
         package="com.assess15.code">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -29,6 +31,16 @@
         <activity android:name=".path.PathActivity"/>
         <activity android:name=".pathMeasure.PathMeasureActivity"/>
         <activity android:name=".event.EventActivity"/>
+        <activity android:name=".screen.pixel.ScreenActivity"/>
+        <activity android:name=".appbar.AppBarActivity"/>
+
+        <activity android:name=".materialDesign.MaterialDesignActivity"/>
+        <activity android:name=".materialDesign.BottomNavigationViewActivity"/>
+        <activity android:name=".materialDesign.VipActivity"/>
+        <activity android:name=".materialDesign.ToolbarActivity"/>
+        <activity android:name=".materialDesign.MovieDetailActivity"/>
+        <activity android:name=".materialDesign.FloatTabActivity"/>
+
     </application>
 
 </manifest>
