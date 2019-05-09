@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.assess15.code.appbar.AppBarActivity
 import com.assess15.code.canvas.CanvasActivity
+import com.assess15.code.coordinatorLayout.CoordinatorLayoutActivity
 import com.assess15.code.event.EventActivity
 import com.assess15.code.materialDesign.MaterialDesignActivity
 import com.assess15.code.paint.PaintActivity
 import com.assess15.code.path.PathActivity
 import com.assess15.code.pathMeasure.PathMeasureActivity
 import com.assess15.code.recyclerView.RecyclerViewActivity
+import com.assess15.code.statusBar.StatusBarActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -56,7 +58,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         recyclerView.setOnClickListener {
-            startActivity(Intent(this,RecyclerViewActivity::class.java))
+            startActivity(Intent(this, RecyclerViewActivity::class.java))
+        }
+
+        coordinator_Layout.setOnClickListener {
+            startActivity(Intent(this, CoordinatorLayoutActivity::class.java))
+        }
+
+        status_bar.setOnClickListener {
+            startActivity(Intent(this, StatusBarActivity::class.java))
         }
     }
 }

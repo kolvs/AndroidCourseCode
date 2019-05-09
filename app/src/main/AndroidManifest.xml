@@ -41,6 +41,12 @@
         <activity android:name=".materialDesign.MovieDetailActivity"/>
         <activity android:name=".materialDesign.FloatTabActivity"/>
         <activity android:name=".recyclerView.RecyclerViewActivity"/>
+        <activity android:name=".paint.colorFilter.CFActivity"/>
+        <activity android:name=".event.demo.MoveBollActivity"/>
+        <activity android:name=".coordinatorLayout.CoordinatorLayoutActivity"/>
+        <activity android:name=".cardView.CardViewActivity"/>
+        <activity android:name=".statusBar.StatusBarActivity"
+        android:theme="@style/StatusBarAppTheme"/>
 
     </application>
 

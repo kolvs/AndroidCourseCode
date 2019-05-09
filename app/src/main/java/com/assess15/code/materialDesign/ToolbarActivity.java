@@ -50,7 +50,6 @@ public class ToolbarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_toolbar);
 
         //如果不设置，则不会出现标题

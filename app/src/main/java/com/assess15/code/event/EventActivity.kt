@@ -1,11 +1,13 @@
 package com.assess15.code.event
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import com.assess15.code.R
+import com.assess15.code.event.demo.MoveBollActivity
 import kotlinx.android.synthetic.main.activity_event.*
 
 class EventActivity : AppCompatActivity() {
@@ -36,6 +38,7 @@ class EventActivity : AppCompatActivity() {
          */
         btn.setOnClickListener {
             Log.d("tr", "OnClickListener")
+            startActivity(Intent(this,MoveBollActivity::class.java))
         }
     }
 

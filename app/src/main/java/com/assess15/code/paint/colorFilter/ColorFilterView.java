@@ -47,12 +47,12 @@ public class ColorFilterView extends View {
 
     private void initLightingColorFilter() {
         // 0xffffff 原始颜色 / 0x00ffff 红色去除 / 0xffffff，0x003000 绿色更亮
-        ColorFilter lighting = new LightingColorFilter(0xffffff, 0x000000);
+        LightingColorFilter lighting = new LightingColorFilter(0xffffff, 0x000000);
         paint.setColorFilter(lighting);
     }
 
     private void initPorterDuffColorFilter() {
-        PorterDuffColorFilter filter = new PorterDuffColorFilter(Color.RED, PorterDuff.Mode.DARKEN);
+        PorterDuffColorFilter filter = new PorterDuffColorFilter(Color.GRAY, PorterDuff.Mode.DARKEN);
         paint.setColorFilter(filter);
     }
 
@@ -72,7 +72,8 @@ public class ColorFilterView extends View {
                 0, 0, 0, 1, 0 // alpha
         };
 
-        ColorMatrixColorFilter matrixColorFilter = new ColorMatrixColorFilter(array); // array | matrix
+//        ColorMatrixColorFilter matrixColorFilter = new ColorMatrixColorFilter(array); // array | matrix
+        ColorMatrixColorFilter matrixColorFilter = new ColorMatrixColorFilter(ColorFilter.colormatrix_huajiu); // array | matrix
         paint.setColorFilter(matrixColorFilter);
     }
 

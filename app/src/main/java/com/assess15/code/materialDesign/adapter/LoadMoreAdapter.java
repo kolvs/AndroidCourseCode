@@ -21,7 +21,7 @@ import java.util.ArrayList;
 /**
  * 上拉加载更多的adapter
  */
-public class LoadMoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener {
+public class LoadMoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements View.OnClickListener, View.OnLongClickListener {
 
     // 普通布局
     public final int TYPE_ITEM = 1;
@@ -66,6 +66,7 @@ public class LoadMoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         if (viewType == TYPE_ITEM) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);
             view.setOnClickListener(this);
+            view.setOnLongClickListener(this);
             return new RecyclerViewItemHolder(view);
         } else if (viewType == TYPE_FOOTER) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_refresh_footer, parent, false);
@@ -183,6 +184,10 @@ public class LoadMoreAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         mOnItemClickListener.onItemClick(v, (int) v.getTag());
     }
 
+    @Override
+    public boolean onLongClick(View v) {
+        return false;
+    }
 
     /**
      * 正常条目的item的ViewHolder

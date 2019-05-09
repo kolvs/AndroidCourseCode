@@ -1,4 +1,4 @@
-package com.assess15.code.recyclerView;
+package com.assess15.code.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;

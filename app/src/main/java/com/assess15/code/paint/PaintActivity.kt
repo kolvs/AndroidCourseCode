@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.assess15.code.R
+import com.assess15.code.paint.colorFilter.CFActivity
 import com.assess15.code.paint.colorFilter.ColorFilterActivity
 import com.assess15.code.paint.gradient.GradientActivity
 import com.assess15.code.paint.xfermode.XfermodeActivity
@@ -34,6 +35,7 @@ class PaintActivity : AppCompatActivity() {
          */
         paintColorFilter.setOnClickListener {
             startActivity(Intent(this, ColorFilterActivity::class.java))
+//            startActivity(Intent(this, CFActivity::class.java))
         }
 
     }

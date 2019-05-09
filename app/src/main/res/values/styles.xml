@@ -31,6 +31,32 @@
         <!--<item name="overlapAnchor">false</item>-->
     </style>
 
+    <style name="StatusBarAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 标题栏颜色 -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- 强调颜色 -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 窗口颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <!-- 虚拟导航栏颜色 -->
+        <item name="android:navigationBarColor">@color/colorPrimary</item>
+        <!--&lt;!&ndash;设置menu菜单的背景色&ndash;&gt;-->
+        <!--<item name="android:itemBackground">@color/black</item>-->
+        <!--&lt;!&ndash;设置Menu菜单的字体颜色&ndash;&gt;-->
+        <!--<item name="android:textColorPrimary">@android:color/darker_gray</item>-->
+        <!--&lt;!&ndash;设置Menu窗口不覆盖ToolBar视图&ndash;&gt;-->
+        <!--<item name="overlapAnchor">false</item>-->
+
+        <!--透明状态栏-->
+        <!--<item name="android:windowTranslucentStatus">true</item>-->
+        <!--设置状态栏颜色-->
+        <!--<item name="android:statusBarColor">@color/green</item>-->
+        <!--虚拟导航栏-->
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
