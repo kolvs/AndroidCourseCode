@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/APP" />
+            <option value="$PROJECT_DIR$/Architect" />
+            <option value="$PROJECT_DIR$/NDK" />
+            <option value="$PROJECT_DIR$/UI" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
