@@ -7,6 +7,7 @@ import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import com.assess15.ui.R;
+import com.assess15.ui.event.demo.CustomImageViewActivity
 import com.assess15.ui.event.demo.MoveBollActivity
 import kotlinx.android.synthetic.main.activity_event.*
 
@@ -38,7 +39,11 @@ class EventActivity : AppCompatActivity() {
          */
         btn.setOnClickListener {
             Log.d("tr", "OnClickListener")
-            startActivity(Intent(this,MoveBollActivity::class.java))
+            startActivity(Intent(this, MoveBollActivity::class.java))
+        }
+
+        btnClick.setOnClickListener {
+            startActivity(Intent(this, CustomImageViewActivity::class.java))
         }
     }
 

@@ -22,6 +22,7 @@ public class MoveBollActivity extends AppCompatActivity implements View.OnTouchL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_move_boll);
 
+        // depresed
         imageView = findViewById(R.id.image);
         relativeLayout = findViewById(R.id.layout);
         //初始设置一个layoutParams
@@ -29,6 +30,14 @@ public class MoveBollActivity extends AppCompatActivity implements View.OnTouchL
         imageView.setLayoutParams(layoutParams);
         //设置屏幕触摸事件
         imageView.setOnTouchListener(this);
+
+        // 这种方式移动小球可以
+        findViewById(R.id.mi).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MoveBollActivity.this, "点击了", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override

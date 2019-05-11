@@ -27,6 +27,10 @@
         <activity android:name="com.assess15.ui.cardView.CardViewActivity"/>
         <activity android:name="com.assess15.ui.statusBar.StatusBarActivity"
                   android:theme="@style/StatusBarAppTheme"/>
+        <activity android:name=".event.demo.CustomImageViewActivity"/>
+        <activity android:name=".paint.demo.PwdEditTextActivity"/>
+
+
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.assess15.ui.widget;
+package com.assess15.ui.widget.imageView;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -14,6 +14,9 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 import com.assess15.ui.R;
 
+/**
+ * 圆形ImageView
+ */
 public class CircleImageView extends ImageView {
 
     private static final ScaleType SCALE_TYPE = ScaleType.CENTER_CROP;

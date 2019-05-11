@@ -1,28 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
+        android:orientation="vertical"
         android:layout_height="match_parent">
 
     <Button
             android:id="@+id/btn"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="wrap_content"
-            android:text="点击事件测试"
+            android:text="可以移动的ImageView"
+            android:textAllCaps="false"
             android:layout_height="wrap_content"/>
 
     <Button
             android:id="@+id/btnClick"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
             android:layout_width="wrap_content"
-            android:text="demo"
+            android:textAllCaps="false"
+            android:text="平移，旋转，缩放ImageView"
             android:layout_height="wrap_content"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

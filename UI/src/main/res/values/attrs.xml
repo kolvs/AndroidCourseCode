@@ -26,4 +26,34 @@
         <attr name="civ_fill_color" format="color" />
     </declare-styleable>
 
+    <!--自定义ImageView属性-->
+    <declare-styleable name="ScaleImageView">
+        <attr name="min_scale_factor" format="float"/>
+        <attr name="max_scale_factor" format="float"/>
+        <attr name="can_back_translate" format="boolean"/>
+        <attr name="can_back_rotate" format="boolean"/>
+        <attr name="can_back_scale" format="boolean"/>
+        <attr name="animator_time" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <!--密码的个数-->
+        <attr name="passwordNumber" format="integer" />
+
+        <!--密码圆点的颜色-->
+        <attr name="passwordColor" format="color" />
+        <!--分割线的颜色-->
+        <attr name="divisionLineColor" format="color" />
+        <!--背景边框的颜色-->
+        <attr name="bgColor" format="color" />
+
+        <!--分割线的大小-->
+        <attr name="divisionLineSize" format="dimension" />
+        <!--背景边框的大小-->
+        <attr name="bgSize" format="dimension" />
+        <!--背景边框的圆角大小-->
+        <attr name="bgCorner" format="dimension" />
+        <!--密码圆点的半径-->
+        <attr name="passwordRadius" format="dimension" />
+    </declare-styleable>
 </resources>

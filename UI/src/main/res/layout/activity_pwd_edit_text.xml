@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.assess15.ui.widget.editText.PasswordEditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="5dp"
+            android:background="@null"
+            android:cursorVisible="false"
+            android:inputType="number"
+            android:maxLength="6"
+            app:bgColor="#d1d2d6"
+            app:bgCorner="3dp"
+            app:bgSize="1dp"
+            app:divisionLineColor="#d1d2d6"
+            app:divisionLineSize="1dp"
+            app:passwordColor="@android:color/black"
+            app:passwordNumber="6"
+            app:passwordRadius="5dp"/>
+
+</LinearLayout>

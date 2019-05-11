@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.assess15.ui.widget.imageView.CustomImageView
+            android:id="@+id/civ_beauty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#eee"
+            android:src="@drawable/beauty"
+            android:layout_gravity="center"
+            app:min_scale_factor="0.1"
+            app:max_scale_factor="3.0"/>
+</LinearLayout>
