@@ -1,1 +1,1 @@
-include ':APP', ':UI', ':NDK', ':Architect'
+include ':APP', ':UI', ':NDK', ':Arch'

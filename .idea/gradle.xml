@@ -9,7 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/APP" />
-            <option value="$PROJECT_DIR$/Architect" />
+            <option value="$PROJECT_DIR$/Arch" />
             <option value="$PROJECT_DIR$/NDK" />
             <option value="$PROJECT_DIR$/UI" />
           </set>

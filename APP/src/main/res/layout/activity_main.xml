@@ -14,71 +14,23 @@
             android:layout_height="wrap_content"/>
 
     <Button
-            android:id="@+id/paint"
-            android:text="Paint"
+            android:id="@+id/ui"
+            android:text="UI"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     <Button
-            android:id="@+id/canvas"
-            android:text="Canvas"
+            android:id="@+id/ndk"
+            android:text="NDK"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-    <Button
-            android:id="@+id/path"
-            android:text="Path"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
 
     <Button
-            android:id="@+id/pathMeasure"
-            android:text="PathMeasure"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/event"
-            android:text="Event"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/appbar"
-            android:text="AppBar"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/materialDesign"
-            android:text="MaterialDesign"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/recyclerView"
-            android:text="RecyclerView"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/coordinator_Layout"
-            android:text="CoordinatorLayout"
-            android:textAllCaps="false"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    <Button
-            android:id="@+id/status_bar"
-            android:text="StatusBar"
+            android:id="@+id/arch"
+            android:text="架构师"
             android:textAllCaps="false"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
