@@ -1,6 +1,6 @@
 package com.assess15.ui.materialDesign.utils;
 
-import android.support.design.widget.AppBarLayout;
+import com.google.android.material.appbar.AppBarLayout;
 
 /**
  * 监听CollapsingToolbarLayout的折叠状态

@@ -3,7 +3,7 @@ package com.assess15.ui
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.assess15.ui.appbar.AppBarActivity
 import com.assess15.ui.canvas.CanvasActivity
 import com.assess15.ui.coordinatorLayout.CoordinatorLayoutActivity

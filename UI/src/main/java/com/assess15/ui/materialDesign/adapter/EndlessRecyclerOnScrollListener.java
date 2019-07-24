@@ -1,7 +1,7 @@
 package com.assess15.ui.materialDesign.adapter;
 
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 public abstract class EndlessRecyclerOnScrollListener extends RecyclerView.OnScrollListener {
 

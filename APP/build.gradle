@@ -2,17 +2,27 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+def dep = rootProject.ext.APP_dep
+def and = rootProject.ext.android
+def url = rootProject.ext.url
+
 android {
-    compileSdkVersion 28
+    compileSdkVersion and.compileSdkVersion
     defaultConfig {
-        applicationId "com.assess15.code"
-        minSdkVersion 21
-        targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        applicationId and.applicationId
+        minSdkVersion and.minSdkVersion
+        targetSdkVersion and.targetSdkVersion
+        versionCode and.versionCode
+        versionName and.versionName
     }
     buildTypes {
+        debug {
+            buildConfigField("String","debug","\"${url.debugUrl}\"")
+
+        }
         release {
+            buildConfigField("String","release","\"${url.releaseUrl}\"")
+
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -21,8 +31,12 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation dep.appcompat
+//    implementation dep.kotlin_stdlib_jdk7
+
+    // 与上面效果一样，但是这是遍历的方式，可以使用在模块中整体遍历使用
+    dep.each { k, v -> implementation v }
+
     implementation project(':UI')
     implementation project(':NDK')
     implementation project(':Arch')

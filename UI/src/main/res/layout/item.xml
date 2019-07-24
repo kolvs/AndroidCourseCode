@@ -10,7 +10,7 @@
     <!-- cardCornerRadius 卡片圆角效果 -->
     <!-- cardElevation 卡片阴影效果 -->
     <!-- contentPadding 卡片内容四周间距 -->
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:foreground="?android:attr/selectableItemBackground"
@@ -110,7 +110,7 @@
 
         </LinearLayout>
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 
 </FrameLayout>

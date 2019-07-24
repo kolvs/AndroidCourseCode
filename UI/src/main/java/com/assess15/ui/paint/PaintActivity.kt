@@ -2,7 +2,7 @@ package com.assess15.ui.paint
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.assess15.ui.R;
 import com.assess15.ui.paint.colorFilter.ColorFilterActivity
 import com.assess15.ui.paint.demo.PwdEditTextActivity

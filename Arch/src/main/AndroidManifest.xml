@@ -5,6 +5,12 @@
             android:name="com.assess15.arch.App">
 
         <activity android:name="com.assess15.arch.ArchActivity"/>
+        <activity android:name=".aop.login.LoginActivity"/>
+        <activity android:name=".aop.login.OtherActivity"/>
+
+        <activity android:name=".test.LoginActivity"/>
+        <activity android:name=".test.MainLoginActivity"/>
+        <activity android:name=".test.OtherActivity"/>
     </application>
 
 </manifest>

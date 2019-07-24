@@ -1,0 +1,33 @@
+ext {
+
+    isReleaase = true
+
+    // 用于切换项目地址
+    url = [
+            debugUrl  : "http://www.baidu.com",
+            releaseUrl: "http://192.168.12.248"
+    ]
+
+    android = [
+            applicationId    : "com.assess15.code",
+            minSdkVersion    : 21,
+            targetSdkVersion : 28,
+            compileSdkVersion: 28,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+
+    // 各个模块下的依赖单独写，方便遍历使用
+    APP_dep = [
+            appcompat         : 'androidx.appcompat:appcompat:1.0.2',
+            kotlin_stdlib_jdk7: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.41"
+    ]
+
+    UI_dep = [
+
+    ]
+
+    NDK_dep = [
+
+    ]
+}

@@ -1,7 +1,7 @@
 package com.assess15.ui.paint.gradient
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 class GradientActivity : AppCompatActivity() {
 

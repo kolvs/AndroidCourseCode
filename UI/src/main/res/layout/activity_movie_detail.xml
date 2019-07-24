@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.DrawerLayout
+<androidx.drawerlayout.widget.DrawerLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:id="@+id/dl_at_draw_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    <android.support.design.widget.CoordinatorLayout
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true">
 
-        <android.support.design.widget.AppBarLayout
+        <com.google.android.material.appbar.AppBarLayout
                 android:id="@+id/appBar"
                 android:layout_width="match_parent"
                 android:layout_height="450dp"
@@ -23,7 +23,7 @@
                  3.scroll|enterAlwaysCollapsed:向下滚动NestedScrollView到最底端时该布局才会显示出来
                  4.scroll|snap:表示一个吸附效果，可以确保childView不会滑动停止在中间的状态
                  5.如果不设置该属性,则该布局不能滑动 -->
-            <android.support.design.widget.CollapsingToolbarLayout
+            <com.google.android.material.appbar.CollapsingToolbarLayout
                     android:id="@+id/collapsingToolbarLayout"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -44,17 +44,17 @@
                         android:transitionName="basic"/>
                 <!--android:src="@drawable/ic"-->
 
-                <android.support.v7.widget.Toolbar
+                <androidx.appcompat.widget.Toolbar
                         android:id="@+id/tb_amd_toolbar"
                         android:layout_width="match_parent"
                         android:layout_height="?attr/actionBarSize"
                         app:layout_collapseMode="pin"/>
 
-            </android.support.design.widget.CollapsingToolbarLayout>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
 
-        </android.support.design.widget.AppBarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
 
-        <android.support.v4.widget.NestedScrollView
+        <androidx.core.widget.NestedScrollView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -71,9 +71,9 @@
                         android:layout_margin="10dp"/>
 
             </LinearLayout>
-        </android.support.v4.widget.NestedScrollView>
+        </androidx.core.widget.NestedScrollView>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
@@ -81,7 +81,7 @@
                 app:layout_anchor="@id/appBar"
                 app:layout_anchorGravity="bottom|end"/>
 
-    </android.support.design.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <TextView
             android:layout_width="match_parent"
@@ -93,4 +93,4 @@
             android:textColor="#fff"
             android:textSize="38sp"/>
 
-</android.support.v4.widget.DrawerLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

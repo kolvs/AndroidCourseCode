@@ -3,7 +3,7 @@ package com.assess15.code
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.assess15.arch.ArchActivity
 import com.assess15.ndk.NDKActivity
 import com.assess15.ui.UIActivity
@@ -34,5 +34,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, ArchActivity::class.java))
         }
 
+        BuildConfig.debug // 获取到debug地址
     }
 }

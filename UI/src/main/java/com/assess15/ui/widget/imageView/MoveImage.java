@@ -10,7 +10,7 @@ import android.view.WindowManager;
  * 可以移动的ImageView
  * 可以通过外部方式解决事件冲突问题
  */
-public class MoveImage extends android.support.v7.widget.AppCompatImageView {
+public class MoveImage extends androidx.appcompat.widget.AppCompatImageView {
 
     private int dx;
     private int dy;

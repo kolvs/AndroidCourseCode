@@ -2,7 +2,7 @@ package com.assess15.ui.paint.colorFilter;
 
 import android.content.Context;
 import android.graphics.*;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 import com.assess15.ui.R;
