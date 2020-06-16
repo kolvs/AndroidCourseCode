@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 public class NDKActivity extends AppCompatActivity {
 
-    {
+    static {
         System.loadLibrary("hello-jni");
     }
 

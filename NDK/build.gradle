@@ -12,7 +12,7 @@ android {
         // 指定源文件的编译方式以及配置编译选项
         externalNativeBuild {
             ndkBuild {
-                abiFilters "armeabi-v7a", "x86"
+                abiFilters "armeabi-v7a", "x86", "arm64-v8a"
             }
         }
 

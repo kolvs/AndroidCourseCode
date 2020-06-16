@@ -5,7 +5,7 @@ int test(){
 }
 
 //com.assess15.ndk.NDKActivity
-jint Java_com_assess15_ndk_NDKActivity_nativeTest(){
+jint Java_com_assess15_ndk_NDKActivity_nativeTest(JNIEnv *env,jobject instance){
     return test();
 }
 
