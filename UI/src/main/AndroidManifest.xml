@@ -1,44 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          xmlns:tools="http://schemas.android.com/tools"
-          package="com.assess15.ui">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.source.ui">
 
     <application
-            android:allowBackup="false"
-            android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name"
-            android:supportsRtl="true"
-            android:theme="@style/AppTheme"
-            android:hardwareAccelerated="false"
-            tools:ignore="GoogleAppIndexingWarning">
+        android:allowBackup="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.assess15.ui.paint.PaintActivity"/>
-        <activity android:name="com.assess15.ui.paint.xfermode.XfermodeActivity"/>
-        <activity android:name="com.assess15.ui.paint.gradient.GradientActivity"/>
-        <activity android:name="com.assess15.ui.paint.colorFilter.ColorFilterActivity"/>
-        <activity android:name="com.assess15.ui.canvas.CanvasActivity"/>
-        <activity android:name="com.assess15.ui.path.PathActivity"/>
-        <activity android:name="com.assess15.ui.pathMeasure.PathMeasureActivity"/>
-        <activity android:name="com.assess15.ui.event.EventActivity"/>
-        <activity android:name="com.assess15.ui.screen.pixel.ScreenActivity"/>
-        <activity android:name="com.assess15.ui.appbar.AppBarActivity"/>
+        <activity
+            android:name=".UIActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name="com.assess15.ui.materialDesign.MaterialDesignActivity"/>
-        <activity android:name="com.assess15.ui.materialDesign.BottomNavigationViewActivity"/>
-        <activity android:name="com.assess15.ui.materialDesign.VipActivity"/>
-        <activity android:name="com.assess15.ui.materialDesign.ToolbarActivity"/>
-        <activity android:name="com.assess15.ui.materialDesign.MovieDetailActivity"/>
-        <activity android:name="com.assess15.ui.materialDesign.FloatTabActivity"/>
-        <activity android:name="com.assess15.ui.recyclerView.RecyclerViewActivity"/>
-        <activity android:name="com.assess15.ui.paint.colorFilter.CFActivity"/>
-        <activity android:name="com.assess15.ui.event.demo.MoveBollActivity"/>
-        <activity android:name="com.assess15.ui.coordinatorLayout.CoordinatorLayoutActivity"/>
-        <activity android:name="com.assess15.ui.cardView.CardViewActivity"/>
-        <activity android:name="com.assess15.ui.statusBar.StatusBarActivity"
-                  android:theme="@style/StatusBarAppTheme"/>
-        <activity android:name=".event.demo.CustomImageViewActivity"/>
-        <activity android:name=".paint.demo.PwdEditTextActivity"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
+        <activity android:name="com.source.ui.paint.PaintActivity" />
+        <activity android:name="com.source.ui.paint.xfermode.XfermodeActivity" />
+        <activity android:name="com.source.ui.paint.gradient.GradientActivity" />
+        <activity android:name="com.source.ui.paint.colorFilter.ColorFilterActivity" />
+        <activity android:name="com.source.ui.canvas.CanvasActivity" />
+        <activity android:name="com.source.ui.path.PathActivity" />
+        <activity android:name="com.source.ui.pathMeasure.PathMeasureActivity" />
+        <activity android:name="com.source.ui.event.EventActivity" />
+        <activity android:name="com.source.ui.appbar.AppBarActivity" />
+
+        <activity android:name="com.source.ui.materialDesign.MaterialDesignActivity" />
+        <activity android:name="com.source.ui.materialDesign.BottomNavigationViewActivity" />
+        <activity android:name="com.source.ui.materialDesign.VipActivity" />
+        <activity android:name="com.source.ui.materialDesign.ToolbarActivity" />
+        <activity android:name="com.source.ui.materialDesign.MovieDetailActivity" />
+        <activity android:name="com.source.ui.materialDesign.FloatTabActivity" />
+        <activity android:name="com.source.ui.recyclerView.RecyclerViewActivity" />
+        <activity android:name="com.source.ui.paint.colorFilter.CFActivity" />
+        <activity android:name="com.source.ui.event.demo.MoveBollActivity" />
+        <activity android:name="com.source.ui.coordinatorLayout.CoordinatorLayoutActivity" />
+        <activity android:name="com.source.ui.cardView.CardViewActivity" />
+        <activity
+            android:name="com.source.ui.statusBar.StatusBarActivity"
+            android:theme="@style/StatusBarAppTheme" />
+        <activity android:name="com.source.ui.event.demo.CustomImageViewActivity" />
+        <activity android:name="com.source.ui.paint.demo.PwdEditTextActivity" />
 
     </application>
 

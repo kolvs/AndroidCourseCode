@@ -7,11 +7,11 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
-    <com.assess15.ui.recyclerView.custom.RecyclerView
+    <com.source.ui.recyclerView.custom.RecyclerView
             android:id="@+id/table"
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-    </com.assess15.ui.recyclerView.custom.RecyclerView>
+    </com.source.ui.recyclerView.custom.RecyclerView>
 
 </LinearLayout>

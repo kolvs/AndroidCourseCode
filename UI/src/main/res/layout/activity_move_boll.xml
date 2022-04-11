@@ -13,7 +13,7 @@
             android:layout_centerVertical="true"
             android:background="@mipmap/ic_launcher"/>
 
-    <com.assess15.ui.widget.imageView.MoveImage
+    <com.source.ui.widget.imageView.MoveImage
             android:id="@+id/mi"
             android:background="@drawable/ic"
             android:layout_width="150dp"

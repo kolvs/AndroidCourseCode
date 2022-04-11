@@ -10,7 +10,7 @@
             android:orientation="horizontal"
             android:gravity="center">
 
-        <com.assess15.ui.materialDesign.view.LoadingView
+        <com.source.ui.materialDesign.view.LoadingView
                 android:id="@+id/pb_loading"
                 android:layout_width="50dp"
                 android:layout_height="30dp"/>

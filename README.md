@@ -1,5 +1,7 @@
 # Android demo
+
 ## UI
+
 - Paint
 - Canvas
 - Path
@@ -7,7 +9,6 @@
 - 屏幕适配
 - ToolBar
 
-## NDK
-
 ## 架构
 
+- AOP

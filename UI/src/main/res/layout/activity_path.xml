@@ -6,7 +6,7 @@
               android:background="@android:color/darker_gray"
               android:layout_height="match_parent">
 
-    <com.assess15.ui.path.demo.DragBubbleView2
+    <com.source.ui.path.demo.DragBubbleView2
             adv:bubble_text="10"
             adv:bubble_textSize="12sp"
             adv:bubble_textColor="@android:color/white"

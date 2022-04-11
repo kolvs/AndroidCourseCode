@@ -1,1 +1,2 @@
-include ':APP', ':UI', ':NDK', ':Arch'
+include ':UI', ':Arch'
+include ':UI-ScreenAdapter'

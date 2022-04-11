@@ -1,16 +1,27 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.assess15.arch">
+    package="com.source.arch">
 
     <application
-            android:name="com.assess15.arch.App">
+        android:name="com.source.arch.App"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
-        <activity android:name="com.assess15.arch.ArchActivity"/>
-        <activity android:name=".aop.login.LoginActivity"/>
-        <activity android:name=".aop.login.OtherActivity"/>
+        <activity
+            android:name=".ArchActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <activity android:name=".test.LoginActivity"/>
-        <activity android:name=".test.MainLoginActivity"/>
-        <activity android:name=".test.OtherActivity"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.source.arch.aop.login.LoginActivity" />
+        <activity android:name="com.source.arch.aop.login.OtherActivity" />
+
+        <activity android:name="com.source.arch.test.LoginActivity" />
+        <activity android:name="com.source.arch.test.MainLoginActivity" />
+        <activity android:name="com.source.arch.test.OtherActivity" />
     </application>
 
 </manifest>

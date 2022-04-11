@@ -5,7 +5,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
-    <com.assess15.ui.widget.imageView.CustomImageView
+    <com.source.ui.widget.imageView.CustomImageView
             android:id="@+id/civ_beauty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

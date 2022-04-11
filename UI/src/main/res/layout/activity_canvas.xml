@@ -16,7 +16,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-    <com.assess15.ui.canvas.demo2.SplashView2
+    <com.source.ui.canvas.demo2.SplashView2
             android:id="@+id/splash"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
