@@ -14,7 +14,7 @@ class App : Application() {
 
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
             override fun onActivityCreated(activity: Activity, savedInstanceState: Bundle?) {
-                Density.setDensity(this@App, activity)
+//                Density.setDensity(this@App, activity)
             }
 
             override fun onActivityStarted(activity: Activity) = Unit

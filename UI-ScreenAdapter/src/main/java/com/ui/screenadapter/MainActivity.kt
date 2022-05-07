@@ -2,13 +2,13 @@ package com.ui.screenadapter
 
 import android.content.Intent
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.ui.screenadapter.cutOut.DisplayCutoutActivity
 import com.ui.screenadapter.databinding.ActivityMainBinding
-import com.ui.screenadapter.density.BaseActivity
 import com.ui.screenadapter.density.DensityActivity
 import com.ui.screenadapter.pixel.ScreenActivity
 
-class MainActivity : BaseActivity() {
+class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
